@@ -16,7 +16,7 @@ jobs:
     - name: Install dependencies
       run: npm ci --force
     - name: Install Playwright Browsers
-      run: npx playwright install --with-deps --force
+      run: npx playwright install --force --with-deps 
     - name: Run Playwright tests
       run: npx playwright test usePageObejcts
     - uses: actions/upload-artifact@v4

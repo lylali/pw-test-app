@@ -55,15 +55,13 @@ export default defineConfig<TestOptions>({
 
   /* Configure projects for major browsers */
   projects: [
-    {
-      name: 'dev',
-      use: { 
-        ...devices['Desktop Safari'],
-        baseURL: 'http://127.0.0.1:4200',
-      },
-      
-      
-    },
+    // {
+    //   name: 'dev',
+    //   use: { 
+    //     ...devices['Desktop Safari'],
+    //     baseURL: 'http://127.0.0.1:4200',
+    //   }, 
+    // },
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
